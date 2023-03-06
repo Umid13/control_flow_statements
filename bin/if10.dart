@@ -12,5 +12,26 @@
         temp: integer
     Returns:
         string: the message to return*/
+String func(int a){
+String s=" ";
+if (a<0){
+  s="Freezing";
+}
+if(a>11&&a<20){
+  s="Very Cold";
+}
+if(a>21&&a<30){
+  s="Cold";
+}
+if(a>31&&a<40){
+  s="Normal";
 
-void main() {}
+}
+if(a>40){
+  s="Very hot";
+}
+return s;
+}
+void main() {
+  print(func(52));
+}
